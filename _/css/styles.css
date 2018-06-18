@@ -10,7 +10,8 @@ html, body {
 
 nav {
 	align-items: center;
-	border-bottom: 2px solid aquamarine;
+	border-bottom: 1px solid gainsboro;
+  box-shadow: 0 2px 5px whitesmoke;
 	display: flex;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -28,37 +29,49 @@ nav {
 	width: 100%;
 }
 .link a {
+	color: mediumorchid;
+  font-weight: bold;
 	text-decoration: none;
-	color: grey;
 }
-.link.active a,
-.link.active a:visited,
-.link.active a:hover {
-	text-decoration: underline;
-	color: aquamarine;
+.active a,
+.active a:visited {
+	text-decoration: underline wavy grey;
+}
+.link a:hover,
+.link a:active,
+.link a:focus {
+	text-decoration: underline wavy mediumorchid;
 }
 
-section {}
-.teachers {
+section {
+  padding-top: 2rem;
+}
+.grid {
 	justify-content: center;
 	display: flex;
 	flex-wrap: wrap;
 }
-.teacher {
-	background-color: whitesmoke;
-	border: 1px solid mediumaquamarine;
+.grid-item {
+	border: 1px solid gainsboro;
+  border-radius: 2px;
+  box-shadow: 0 0 3px whitesmoke;
 	margin: 1.5rem 2.5%;
+  transition: all 0.25s 0s ease-out;
 	width: 25%;
 }
+.grid-item:hover {
+  box-shadow: 0 5px 10px gainsboro;
+}
 
+/* Teachers */
 .teacher__bio {
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid mediumaquamarine;
+	border-bottom: 2px solid whitesmoke;
 }
 .bio__image {}
 .bio__image {
-	border: 1px solid mediumaquamarine;
+	border: 1px solid gainsboro;
 	border-radius: 50%;
 	height: 96px;
 	margin: 1rem;
@@ -75,5 +88,34 @@ section {}
 	width: 50%;
 }
 .teacher-info__rating {
-	border-left: 1px solid mediumaquamarine;
+	border-left: 2px solid whitesmoke;
+}
+
+/* Students */
+.student {}
+.student__bio {
+  border-bottom: 2px solid whitesmoke;
+  text-align: center;
+}
+.student__info {
+  padding: 1.5rem;
+}
+
+/* Courses */
+.course {
+  align-items: center;
+  display: flex;
+  width: 45%;
+  padding: 0;
+}
+.course__title,
+.course__info {
+  padding: 1rem;
+}
+.course__title {
+  width: 35%;
+}
+.course__info {
+  border-left: 2px solid whitesmoke;
+  width: 65%;
 }

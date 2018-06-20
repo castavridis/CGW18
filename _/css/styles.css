@@ -62,6 +62,22 @@ section {
 .grid-item:hover {
   box-shadow: 0 5px 10px gainsboro;
 }
+.container {
+  display: table;
+  width: 100%;
+}
+.row {
+  display: table-row;
+}
+.row + .row .col {
+  padding-top: 1rem;
+}
+.col {
+  display: table-cell;
+}
+.col:first-child {
+  font-weight: bold;
+}
 
 /* Teachers */
 .teacher__bio {

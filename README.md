@@ -6,8 +6,11 @@ This is a test of the Glitch platform to see if we can use it for CoderGirl less
 ### Social Aspects
 - Eep! Accidentally asked to join a [project](https://coffee-talks.glitch.me/) when trying to figure out how to see if I could "Save" it 
 - Hmm: How do I follow people?
+- **You can ask for help!**
 
 ### Editor
+- Since the live page updates in real time, this is not a great platform for prompts. The browers brings the preview tab to the front, if open and updated
+- Sometimes a brand new project is made even though I'm the owner of the project I'm editing.
 - It was unclear that adding forward slashes `/` to the name of files would effectively place them in new directories.
   - Displaying files in a flat manner like `_/css/styles.css` could help reinforce path structure for students.
 - Glitch can connect to a GitHub repo, will need to test out that workflow and how commits might work
